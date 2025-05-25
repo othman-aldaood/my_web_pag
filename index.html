@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Othman Al Daood | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    :root {
+      --primary: #1A374D;
+      --accent: #406882;
+      --light: #F3F4F6;
+      --dark: #13293D;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+    }
+    .bg-primary {
+      background-color: var(--primary) !important;
+    }
+    .text-primary {
+      color: var(--primary) !important;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+    }
+    .skill-bar {
+      height: 20px;
+      border-radius: 5px;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+    }
+    .card-body {
+      padding: 2rem;
+    }
+    .list-group-item {
+      background-color: transparent;
+      border: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Othman Al Daood</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#experience">Erfahrung</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Bildung</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Fähigkeiten</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="vh-100 d-flex align-items-center text-white hero-section">
+    <div class="container text-center" data-aos="zoom-in">
+      <h1 class="display-3 f-5 fw-bold">Othman Al Daood</h1>
+      <p class="lead">Motivierter IT-Fachmann mit vielseitiger Erfahrung in
+Webentwicklung, Backend-Programmierung und
+Softwaretests. Fundierte Kenntnisse in C#, .NET, PHP, SQL sowie
+modernen Webtechnologien. Praxisnahe Ausbildung durch
+duales Studium, IHK-Zertifizierung und praktische Projekte im
+Lager- und Warenwirtschaftssystem. Teamfähig, lernbereit und
+zielorientiert mit einem starken Fokus auf Qualität und
+Funktionalität.</p>
+      <a href="#contact" class="btn btn-light btn-lg mt-3">Kontakt aufnehmen</a>
+    </div>
+  </header>
+
+  <!-- Berufserfahrung -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-primary" data-aos="fade-up">Berufserfahrung</h2>
+      <div class="row g-4">
+        <!--  Decathlon    -->
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="badge bg-success text-white mb-2">2022 - dato</div>
+              <h5 class="card-title">Kassierer & Informationsmitarbeiter</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Decathlon, Berlin</h6>
+              <p class="card-text">Tätigkeit als Kassierer und Informationsmitarbeiter bei Decathlon, Berlin.
+Verantwortlich für Kundenservice, Produktberatung und Kassenvorgänge.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--   SysPro GmbH   -->
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="badge bg-info text-white mb-2">2022 - 2024</div>
+              <h5 class="card-title">Webentwickler, Backend Developer <i class="opacity-50" >(Dualer Student)</i></h5>
+              <h6 class="card-subtitle mb-2 text-muted">Syspro GmbH, Berlin</h6>
+              <p class="card-text">Backend-Entwicklung mit C# und .NET für Lager- und
+Warenwirtschaftssysteme im Kundenauftrag. Zusätzlich Entwicklung einer
+webbasierten Zeiterfassung mit PHP, Bootstrap und SQL.</p>
+            </div>
+          </div>
+        </div>
+
+        <!--    Metis  -->
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="badge bg-info text-white mb-2">2021-2021 (6 Monaten)</div>
+              <h5 class="card-title">Software Tester, Webentwickler <i class="opacity-50" >(Praktikum)</i></h5>
+              <h6 class="card-subtitle mb-2 text-muted">Metis System AG, Berlin</h6>
+              <p class="card-text">Praktikum als Webentwickler bei Metis System AG im Rahmen der IHкAusbildung, mit Schwerpunkt auf Full-Stack-Webentwicklung.
+Abschlussprojekt: Entwicklung einer Wetterstation-Webanwendung mit HTML,
+CSS, JavaScript und Leaflet-Map; zusätzlich tätig als Softwaretester.</p>
+            </div>
+          </div>
+</div>
+        <!--    Nill Assla  -->
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="badge bg-info text-white mb-2">2018-2019</div>
+              <h5 class="card-title">Kellner</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Nil und Assala Restaurant, Berlin</h6>
+              <p class="card-text">Tätigkeit als Kellner mit Schwerpunkt auf Gästebetreuung, Serviceabläufen
+und Zusammenarbeit im Team.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bildung -->
+  <section id="education" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5 text-dark fw-bold display-5" data-aos="fade-up">Bildung</h2>
+      <div class="timeline position-relative ps-4">
+
+        <!--  HTW   -->
+        <div class="timeline-item p-auto card shadow mb-5" data-aos="fade-up">
+          <div class="card-body">
+            <div class="badge bg-success text-white mb-2">2024 - dato</div>
+          <h5 class="fw-bold">B.Sc. in Angewandter Informatik</h5>
+          <p class="mb-1 text-muted"style="font-weight:bold;">HTW Berlin</p>
+          <p class="text-secondary">Fundierte Kenntnisse in Programmierung, Softwarearchitektur und modernen IT-Systemen. Spezialisierung in [z. B. Künstliche Inellienz oder Mobile Computing].</p>
+          </div>
+        </div>
+        
+        <!--  iu   -->
+        <div class="timeline-item p-auto card shadow mb-5" data-aos="fade-up">
+          <div class="card-body">
+            <div class="badge bg-info text-white mb-2">2022 - 2024</div>
+          <h5 class="fw-bold">B.Sc. Informatik <i class="opacity-50" >(Duales Studuim)</i></h5>
+          <p class="mb-1 text-muted"style="font-weight:bold;">IU Hochschule </p>
+          <p class="text-secondary">Duales Informatikstudium mit Schwerpunkt auf Softwareentwicklung IT-Systeme und moderne Technologien. Theorie und Praxis kombiniert durch wöchentliche Arbeit im Partnerunternehmen.</p>
+          </div>
+        </div>
+        
+        <!--  IHK   -->
+        <div class="timeline-item p-auto card shadow mb-5" data-aos="fade-up">
+          <div class="card-body">
+            <div class="badge bg-info text-white mb-2">2020 - 2023</div>
+          <h5 class="fw-bold">Fachinformatiker Anwendungsetwickler</h5>
+          <p class="mb-1 text-muted"style="font-weight:bold;">IHK Berlin </p>
+          <p class="text-secondary">Praxisnahe Weiterbildung zur Fachinformatiker mit Schwerpunkt auf Softwareentwicklung und ITSysteme (z. B. Java, SQL, HTML/CSS). Abschluss mit IHK-Zertifikat.</p>
+          </div>
+        </div>
+
+        <!--  TU Berlin   -->
+        <div class="timeline-item p-auto card shadow mb-5" data-aos="fade-up">
+          <div class="card-body">
+            <div class="badge bg-info text-white mb-2">2019 (1 Semester)</div>
+          <h5 class="fw-bold">B.Sc. Informatik <i class="opacity-50" >(Gaststudent)</i></h5>
+          <p class="mb-1 text-muted" style="font-weight:bold;">Technische Universität Berlin </p>
+          <p class="text-secondary">Gastsemester im Informatik-Bachelor an der TU Berlin mit Fokus auf Programmierung und Algorithmen. Teilnahme an grundlegenden Lehrveranstaltungen der theoretischen und praktischen Informatik.</p>
+          </div>
+        </div>
+
+        <!--  Deutsch  -->
+        <div class="timeline-item p-auto card shadow mb-5" data-aos="fade-up">
+          <div class="card-body">
+            <div class="badge bg-info text-white mb-2">2015 - 2018</div>
+          <h5 class="fw-bold  ">Deutsch Lernen </h5>
+          <p class="mb-1  text-muted"><span style="font-weight:bold;">Sprach kurs und intgrationskurs</span></p>
+          <p class="text-secondary">Deutschkurse von Al bis C1 inkl. Integrations- und Orientierungskurs. Schwerpunkt auf Sprachpraxis, Grammatik und landeskundlicher Orientierung.</p>
+          </div>
+        </div>
+
+        <!--  Deutsch  -->
+        <div class="timeline-item p-auto card shadow mb-5" data-aos="fade-up">
+          <div class="card-body">
+            <div class="badge bg-info text-white mb-2">2013 (2 Monaten)</div>
+          <h5 class="fw-bold  ">Pharmazie </h5>
+          <p class="mb-1  text-muted"><span style="font-weight:bold;">Al Euphrat Universität </span></p>
+          <p class="text-secondary">Kurzzeitstudium der Pharmazie an der Al Euphrat Universität (2013, 2 Monate). Grundlagen in Chemie, Biologie und pharmazeutischen Fächern.</p>
+          </div>
+        </div>
+
+
+          <!--  Deutsch  -->
+        <div class="timeline-item p-auto card shadow mb-5" data-aos="fade-up">
+          <div class="card-body">
+            <div class="badge bg-info text-white mb-2"> 2001 - 2012</div>
+          <h5 class="fw-bold  ">Schulzeit</h5>
+          <p class="mb-1  text-muted"><span style="font-weight:bold;"> </span></p>
+          <p class="text-secondary">Grundschule, Mittelschule, Realschule
+und Abitur. Abschluss mit
+Hochschulreife</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Fähigkeiten -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-primary" data-aos="fade-up">Fähigkeiten</h2>
+      <div class="row g-4" data-aos="fade-up">
+        <div class="col-md-6">
+          <h5>C# & .NET</h5>
+          <div class="progress mb-3 skill-bar">
+            <div class="progress-bar bg-primary" style="width: 85%"></div>
+          </div>
+          <h5>HTML/CSS/JavaScript</h5>
+          <div class="progress mb-3 skill-bar">
+            <div class="progress-bar bg-primary" style="width: 90%"></div>
+          </div>
+          <h5>PHP & MySQL</h5>
+          <div class="progress mb-3 skill-bar">
+            <div class="progress-bar bg-primary" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5>Azure DevOps</h5>
+          <div class="progress mb-3 skill-bar">
+            <div class="progress-bar bg-primary" style="width: 75%"></div>
+          </div>
+          <h5>Sprachen</h5>
+          <p>Deutsch (C1), Englisch (B1), Arabisch (Muttersprache)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center mb-5 text-primary" data-aos="fade-up">Kontakt</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8" data-aos="fade-up">
+          <ul class="list-group list-group-flush fs-5">
+            <li class="list-group-item">
+              <i class="bi bi-envelope-fill me-2 text-primary"></i>
+              <a href="mailto:othman3mm@gmail.com">oth******gmail.com</a>
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-telephone-fill me-2 text-primary"></i>
+              <a href="tel:+4915756685368">+49 15******</a>
+            </li>
+            <li class="list-group-item">
+              <i class="bi bi-linkedin me-2 text-primary"></i>
+              <a href="https://linkedin.com/in/othman-al-daood-542bb4150" target="_blank">LinkedIn Profil</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+</body>
+</html>
