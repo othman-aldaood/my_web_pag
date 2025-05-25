@@ -27,7 +27,6 @@ Diese Website wurde mit modernen Webtechnologien erstellt, um meine beruflichen 
 ```
 📦 portfolio
 ├── index.html         # Haupt-HTML-Datei
-├── assets/            # Bilder und Ressourcen (optional)
 ├── README.md          # Diese Datei
 ```
 
