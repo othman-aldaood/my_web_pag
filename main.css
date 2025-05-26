@@ -1,0 +1,41 @@
+:root {
+      --primary: #1A374D;
+      --accent: #406882;
+      --light: #F3F4F6;
+      --dark: #13293D;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+    }
+    .bg-primary {
+      background-color: var(--primary) !important;
+    }
+    .text-primary {
+      color: var(--primary) !important;
+    }
+    .hero-section {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+    }
+    .skill-bar {
+      height: 20px;
+      border-radius: 5px;
+    }
+    .card {
+      border: none;
+      border-radius: 1rem;
+    }
+    .card-body {
+      padding: 2rem;
+    }
+    .list-group-item {
+      background-color: transparent;
+      border: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
