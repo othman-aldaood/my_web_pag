@@ -1,51 +1,59 @@
+# Othman Al Daood – Lebenslauf
 
-# 🌐 Othman Al Daood – Portfolio
+Persönliche Lebenslauf-Website mit Übersicht über Berufserfahrung, Ausbildung, Fähigkeiten und Kontakt.
 
-Willkommen auf meiner persönlichen Portfolio-Website. Hier findest du eine Übersicht über meinen beruflichen Werdegang, meine Ausbildung, technischen Fähigkeiten sowie Kontaktmöglichkeiten.
+## Projektbeschreibung
 
-## 📄 Projektbeschreibung
+Einfache, professionelle Webseite als Online-Lebenslauf. Dunkles Design, klare Struktur und optimierte Darstellung für Desktop und Mobilgeräte.
 
-Diese Website wurde mit modernen Webtechnologien erstellt, um meine beruflichen Qualifikationen und Erfahrungen professionell zu präsentieren.
+## Technologien
 
-## 🔧 Verwendete Technologien
-
-- **HTML5**, **CSS3**, **JavaScript**
-- **Bootstrap 5.3**
-- **AOS (Animate On Scroll Library)**
+- **HTML5**
+- **CSS3** (Variablen, Grid, Flexbox, Dark Theme)
+- **Bootstrap 5.3** (Grid & Utilities)
 - **Bootstrap Icons**
 
-## 🧭 Inhalte
+## Inhalte
 
-- **Hero Section** mit Name, Slogan und Call-to-Action
-- **Berufserfahrung** (Decathlon, Syspro GmbH)
-- **Bildung** (HTW Berlin, IU Hochschule, IHK Berlin, TU Berlin, Al Euphrat Universität)
-- **Fähigkeiten** (C#, .NET, Webtechnologien, Sprachen etc.)
-- **Kontaktbereich** mit E-Mail, Telefonnummer und LinkedIn-Link
+- **Header** – Foto, Name, Kurzprofil, Navigation zu den Abschnitten
+- **Berufserfahrung** – Decathlon, Syspro GmbH, Metis System AG, Nil und Assala Restaurant
+- **Bildung** – HTW Berlin, IU, IHK Berlin, TU Berlin, Sprachkurse, Schulzeit
+- **Fähigkeiten** – Programmiersprachen & Frameworks, Web & Design, Datenbanken & Tools, Sprachen
+- **Kontakt** – E-Mail, Telefon, LinkedIn
 
-## 📁 Projektstruktur
+## Projektstruktur
 
 ```
-📦 portfolio
-├── index.html         # Haupt-HTML-Datei
-├── README.md          # Diese Datei
+my_web_pag/
+├── index.html          # Hauptseite (Lebenslauf)
+├── main.css            # Styles (Dark Design, Layout)
+├── logo.svg            # Favicon / Logo
+├── Othman Foto.png     # Profilfoto
+└── README.md           # Diese Datei
 ```
 
-## 🖥️ Vorschau
+## Lokal starten
 
-Du kannst die Seite lokal testen:
+Seite im Browser öffnen:
 
 ```bash
-git clone https://github.com/deinbenutzername/portfolio-othman.git
-cd portfolio-othman
-open index.html  # oder im Browser öffnen
+# Im Projektordner
+open index.html
 ```
 
-## 📬 Kontakt
+Oder die Datei `index.html` direkt im Browser öffnen (Doppelklick bzw. „Öffnen mit“).
 
-- ✉️ **E-Mail**: [othm++++++@gmail.com](mailto:othman3mm@gmail.com)
-- 📞 **Telefon**: +49 157 ************
-- 🔗 **LinkedIn**: [Profil anzeigen](https://linkedin.com/in/othman-al-daood-542bb4150)
+## Design
+
+- **Dark Theme** – dunkler Hintergrund, helle Schrift, blauer Akzent
+- **Responsive** – angepasst für Smartphone, Tablet und Desktop
+- **Druck** – Druckansicht mit hellem Hintergrund für bessere Lesbarkeit
+
+## Kontakt
+
+- **E-Mail:** othmanaldaood@gmail.com
+- **LinkedIn:** [Profil](https://linkedin.com/in/othman-al-daood)
 
 ---
 
-> Erstellt mit ❤️ von Othman Al Daood
+Othman Al Daood · Lebenslauf

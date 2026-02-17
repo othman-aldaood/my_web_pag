@@ -3,663 +3,234 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Othman Al Daood | Portfolio & Lebenslauf</title>
+  <title>Othman Al Daood | Lebenslauf</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./main.css">
   <meta name="google-site-verification" content="CoN8KHqfebCU_cP528e-Fgyg1kqB7wSyxUur8cCgOvs" />
-  <meta name="description" content="Portfolio von Othman Al Daood - IT-Fachmann mit Erfahrung in Webentwicklung, Backend-Programmierung und Softwaretests.">
+  <meta name="description" content="Lebenslauf von Othman Al Daood – IT-Fachmann, Webentwickler, Backend-Developer.">
   <link rel="icon" href="./logo.svg" type="image/x-icon">
-  
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+  <header class="cv-header">
     <div class="container">
-      <a class="navbar-brand" href="#home">Othman Al Daood</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Start</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Erfahrung</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Bildung</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Fähigkeiten</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <div class="container">
-      <div class="row align-items-center min-vh-100">
-        <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
-          <div class="hero-content">
-            <div class="hero-logo mb-4">
-              <img src="./logo.svg" alt="Logo" class="logo-img">
-            </div>
-            <h1 class="hero-title">Othman Al Daood</h1>
-            <p class="hero-subtitle">IT-Fachmann & Softwareentwickler</p>
-            <p class="hero-description">
-              Motivierter IT-Fachmann mit vielseitiger Erfahrung in Webentwicklung, Backend-Programmierung und Softwaretests. 
-              Fundierte Kenntnisse in C#, .NET, PHP, SQL sowie modernen Webtechnologien. 
-              Praxisnahe Ausbildung durch duales Studium, IHK-Zertifizierung und praktische Projekte im Lager- und Warenwirtschaftssystem. 
-              Teamfähig, lernbereit und zielorientiert mit einem starken Fokus auf Qualität und Funktionalität.
-            </p>
-            <div class="hero-buttons">
-              <a href="#contact" class="btn btn-primary-custom btn-lg me-3">Kontakt</a>
-              <a href="#experience" class="btn btn-outline-custom btn-lg">Mehr erfahren</a>
-            </div>
-          </div>
+      <div class="header-inner">
+        <div class="header-photo">
+          <img src="./Othman Foto.png" alt="Othman Al Daood">
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-left">
-          <div class="profile-image-wrapper">
-            <img src="./Othman Foto.png" alt="Othman Al Daood" class="profile-image">
-          </div>
+        <div class="header-text">
+          <h1>Othman Al Daood</h1>
+          <p class="headline">IT-Fachmann & Softwareentwickler</p>
+          <p class="summary">
+            Motivierter IT-Fachmann mit Erfahrung in Webentwicklung, Backend-Programmierung und Softwaretests. 
+            Kenntnisse in C#, .NET, PHP, SQL und modernen Webtechnologien. Duales Studium, IHK-Zertifizierung, 
+            Praxis in Lager- und Warenwirtschaftssystemen. Teamfähig, lernbereit, zielorientiert.
+          </p>
+          <nav class="header-nav" aria-label="Inhaltsübersicht">
+            <a href="#erfahrung"><i class="bi bi-briefcase"></i> Berufserfahrung</a>
+            <a href="#bildung"><i class="bi bi-mortarboard"></i> Bildung</a>
+            <a href="#faehigkeiten"><i class="bi bi-tools"></i> Fähigkeiten</a>
+            <a href="#kontakt"><i class="bi bi-envelope"></i> Kontakt</a>
+          </nav>
         </div>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <a href="#experience"><i class="bi bi-chevron-down"></i></a>
-    </div>
-  </section>
+  </header>
 
-  <!-- Berufserfahrung mit Slider -->
-  <section id="experience" class="section-padding bg-light">
+  <main class="cv-main">
     <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Berufserfahrung</h2>
-      
-      <!-- Experience Slider -->
-      <div id="experienceCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000" data-aos="fade-up">
-        <div class="carousel-indicators-wrapper">
-          <div class="carousel-indicators">
-            <div class="indicator-connector"></div>
-            <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-              <div class="indicator-icon">
-                <i class="bi bi-briefcase-fill"></i>
-              </div>
-              <span class="indicator-number">01</span>
-              <span class="indicator-label">Decathlon</span>
-              <span class="indicator-year">2022-2025</span>
-            </button>
-            <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="1" aria-label="Slide 2">
-              <div class="indicator-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <span class="indicator-number">02</span>
-              <span class="indicator-label">Syspro</span>
-              <span class="indicator-year">2022-2024</span>
-            </button>
-            <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="2" aria-label="Slide 3">
-              <div class="indicator-icon">
-                <i class="bi bi-bug-fill"></i>
-              </div>
-              <span class="indicator-number">03</span>
-              <span class="indicator-label">Metis</span>
-              <span class="indicator-year">2021</span>
-            </button>
-            <button type="button" data-bs-target="#experienceCarousel" data-bs-slide-to="3" aria-label="Slide 4">
-              <div class="indicator-icon">
-                <i class="bi bi-people-fill"></i>
-              </div>
-              <span class="indicator-number">04</span>
-              <span class="indicator-label">Restaurant</span>
-              <span class="indicator-year">2018-2019</span>
-            </button>
-          </div>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="experience-slide">
-              <div class="slide-icon">
-                <i class="bi bi-briefcase-fill"></i>
-              </div>
-              <div class="experience-badge">2022 - 2025</div>
-              <h3 class="experience-title">Kassierer & Informationsmitarbeiter</h3>
-              <h4 class="experience-company">Decathlon, Berlin</h4>
-              <p class="experience-description">
-                Tätigkeit als Kassierer und Informationsmitarbeiter bei Decathlon, Berlin. 
-                Verantwortlich für Kundenservice, Produktberatung und Kassenvorgänge.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="experience-slide">
-              <div class="slide-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <div class="experience-badge">2022 - 2024</div>
-              <h3 class="experience-title">Webentwickler, Backend Developer <span class="badge-text">(Dualer Student)</span></h3>
-              <h4 class="experience-company">Syspro GmbH, Berlin</h4>
-              <p class="experience-description">
-                Backend-Entwicklung mit C# und .NET für Lager- und Warenwirtschaftssysteme im Kundenauftrag. 
-                Zusätzlich Entwicklung einer webbasierten Zeiterfassung mit PHP, Bootstrap und SQL.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="experience-slide">
-              <div class="slide-icon">
-                <i class="bi bi-bug-fill"></i>
-              </div>
-              <div class="experience-badge">2021 (6 Monate)</div>
-              <h3 class="experience-title">Software Tester, Webentwickler <span class="badge-text">(Praktikum)</span></h3>
-              <h4 class="experience-company">Metis System AG, Berlin</h4>
-              <p class="experience-description">
-                Praktikum als Webentwickler bei Metis System AG im Rahmen der IHK-Ausbildung, 
-                mit Schwerpunkt auf Full-Stack-Webentwicklung. Abschlussprojekt: Entwicklung einer 
-                Wetterstation-Webanwendung mit HTML, CSS, JavaScript und Leaflet-Map; 
-                zusätzlich tätig als Softwaretester.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="experience-slide">
-              <div class="slide-icon">
-                <i class="bi bi-people-fill"></i>
-              </div>
-              <div class="experience-badge">2018 - 2019</div>
-              <h3 class="experience-title">Kellner</h3>
-              <h4 class="experience-company">Nil und Assala Restaurant, Berlin</h4>
-              <p class="experience-description">
-                Tätigkeit als Kellner mit Schwerpunkt auf Gästebetreuung, Serviceabläufen 
-                und Zusammenarbeit im Team.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
 
-  <!-- Bildung -->
-  <section id="education" class="section-padding">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Bildung</h2>
-      <div class="education-timeline">
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-          <div class="timeline-marker">
-            <div class="marker-icon">
-              <i class="bi bi-mortarboard-fill"></i>
+      <section id="erfahrung" class="cv-section">
+        <h2 class="section-heading">
+          <i class="bi bi-briefcase"></i>
+          Berufserfahrung
+        </h2>
+        <div class="entry-list">
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2022 – 2025</span>
+              <span class="entry-place"><i class="bi bi-building"></i> Decathlon, Berlin</span>
             </div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-badge badge-current">
-              <i class="bi bi-calendar3"></i>
-              <span>2024 - dato</span>
+            <h3>Kassierer & Informationsmitarbeiter</h3>
+            <p>Kundenservice, Produktberatung, Kassenvorgänge.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2022 – 2024</span>
+              <span class="entry-place"><i class="bi bi-building"></i> Syspro GmbH, Berlin</span>
             </div>
-            <div class="timeline-header">
-              <h3 class="timeline-title">B.Sc. in Angewandter Informatik</h3>
-              <div class="timeline-degree">
-                <i class="bi bi-award-fill"></i>
-                <span>Bachelor of Science</span>
-              </div>
+            <h3>Webentwickler, Backend Developer <em>(Dualer Student)</em></h3>
+            <p>Backend mit C# und .NET für Lager- und Warenwirtschaftssysteme. Webbasierte Zeiterfassung mit PHP, Bootstrap, SQL.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2021 (6 Monate)</span>
+              <span class="entry-place"><i class="bi bi-building"></i> Metis System AG, Berlin</span>
             </div>
-            <h4 class="timeline-institution">
-              <i class="bi bi-building"></i>
-              HTW Berlin
-            </h4>
-            <p class="timeline-description">
-              Fundierte Kenntnisse in Programmierung, Softwarearchitektur und modernen IT-Systemen. 
-              Spezialisierung in Künstlicher Intelligenz oder Mobile Computing.
-            </p>
-            <div class="timeline-tags">
-              <span class="tag">Programmierung</span>
-              <span class="tag">Softwarearchitektur</span>
-              <span class="tag">KI/Mobile Computing</span>
+            <h3>Software Tester, Webentwickler <em>(Praktikum)</em></h3>
+            <p>Full-Stack-Webentwicklung, IHK-Ausbildung. Abschlussprojekt: Wetterstation-Webanwendung (HTML, CSS, JavaScript, Leaflet). Softwaretester.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2018 – 2019</span>
+              <span class="entry-place"><i class="bi bi-building"></i> Nil und Assala Restaurant, Berlin</span>
             </div>
-          </div>
+            <h3>Kellner</h3>
+            <p>Gästebetreuung, Serviceabläufe, Teamarbeit.</p>
+          </article>
         </div>
+      </section>
 
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-          <div class="timeline-marker">
-            <div class="marker-icon">
-              <i class="bi bi-book-fill"></i>
+      <section id="bildung" class="cv-section">
+        <h2 class="section-heading">
+          <i class="bi bi-mortarboard"></i>
+          Bildung
+        </h2>
+        <div class="entry-list">
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2024 – heute</span>
+              <span class="entry-place"><i class="bi bi-building"></i> HTW Berlin</span>
             </div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-badge">
-              <i class="bi bi-calendar3"></i>
-              <span>2022 - 2024</span>
+            <h3>B.Sc. Angewandte Informatik</h3>
+            <p>Programmierung, Softwarearchitektur, moderne IT-Systeme. Schwerpunkt z. B. KI oder Mobile Computing.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2022 – 2024</span>
+              <span class="entry-place"><i class="bi bi-building"></i> IU Hochschule</span>
             </div>
-            <div class="timeline-header">
-              <h3 class="timeline-title">B.Sc. Informatik <span class="badge-text">(Duales Studium)</span></h3>
-              <div class="timeline-degree">
-                <i class="bi bi-award-fill"></i>
-                <span>Bachelor of Science</span>
-              </div>
+            <h3>B.Sc. Informatik <em>(Duales Studium)</em></h3>
+            <p>Softwareentwicklung, IT-Systeme, moderne Technologien. Theorie und Praxis im Partnerunternehmen.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2020 – 2023</span>
+              <span class="entry-place"><i class="bi bi-building"></i> IHK Berlin</span>
             </div>
-            <h4 class="timeline-institution">
-              <i class="bi bi-building"></i>
-              IU Hochschule
-            </h4>
-            <p class="timeline-description">
-              Duales Informatikstudium mit Schwerpunkt auf Softwareentwicklung, IT-Systeme und moderne Technologien. 
-              Theorie und Praxis kombiniert durch wöchentliche Arbeit im Partnerunternehmen.
-            </p>
-            <div class="timeline-tags">
-              <span class="tag">Softwareentwicklung</span>
-              <span class="tag">IT-Systeme</span>
-              <span class="tag">Duales Studium</span>
+            <h3>Fachinformatiker Anwendungsentwickler</h3>
+            <p>Softwareentwicklung, IT-Systeme (Java, SQL, HTML/CSS). IHK-Zertifikat.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2019 (1 Semester)</span>
+              <span class="entry-place"><i class="bi bi-building"></i> TU Berlin</span>
             </div>
-          </div>
+            <h3>B.Sc. Informatik <em>(Gaststudent)</em></h3>
+            <p>Programmierung, Algorithmen, theoretische und praktische Informatik.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2015 – 2018</span>
+              <span class="entry-place"><i class="bi bi-building"></i> Sprach- und Integrationskurs</span>
+            </div>
+            <h3>Deutsch A1 – C1</h3>
+            <p>Integrations- und Orientierungskurs. Sprachpraxis, Grammatik, Landeskunde.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2013 (2 Monate)</span>
+              <span class="entry-place"><i class="bi bi-building"></i> Al Euphrat Universität</span>
+            </div>
+            <h3>Pharmazie (Kurzzeitstudium)</h3>
+            <p>Grundlagen Chemie, Biologie, pharmazeutische Fächer.</p>
+          </article>
+          <article class="entry">
+            <div class="entry-meta">
+              <span class="entry-date"><i class="bi bi-calendar3"></i> 2001 – 2012</span>
+              <span class="entry-place"><i class="bi bi-building"></i> Schule</span>
+            </div>
+            <h3>Schulzeit – Abitur (Hochschulreife)</h3>
+            <p>Grundschule, Mittelschule, Realschule, Abitur.</p>
+          </article>
         </div>
+      </section>
 
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-          <div class="timeline-marker">
-            <div class="marker-icon">
-              <i class="bi bi-patch-check-fill"></i>
-            </div>
+      <section id="faehigkeiten" class="cv-section cv-section-skills">
+        <h2 class="section-heading">
+          <i class="bi bi-tools"></i>
+          Fähigkeiten
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4><i class="bi bi-code-slash"></i> Programmiersprachen & Frameworks</h4>
+            <ul class="skill-tags">
+              <li><span>C#</span></li>
+              <li><span>.NET</span></li>
+              <li><span>PHP</span></li>
+              <li><span>JavaScript</span></li>
+              <li><span>Node.js</span></li>
+              <li><span>VBS / VBA</span></li>
+            </ul>
           </div>
-          <div class="timeline-content">
-            <div class="timeline-badge">
-              <i class="bi bi-calendar3"></i>
-              <span>2020 - 2023</span>
-            </div>
-            <div class="timeline-header">
-              <h3 class="timeline-title">Fachinformatiker Anwendungsentwickler</h3>
-              <div class="timeline-degree">
-                <i class="bi bi-award-fill"></i>
-                <span>IHK-Zertifikat</span>
-              </div>
-            </div>
-            <h4 class="timeline-institution">
-              <i class="bi bi-building"></i>
-              IHK Berlin
-            </h4>
-            <p class="timeline-description">
-              Praxisnahe Weiterbildung zur Fachinformatiker mit Schwerpunkt auf Softwareentwicklung und 
-              IT-Systeme (z. B. Java, SQL, HTML/CSS). Abschluss mit IHK-Zertifikat.
-            </p>
-            <div class="timeline-tags">
-              <span class="tag">Java</span>
-              <span class="tag">SQL</span>
-              <span class="tag">HTML/CSS</span>
-              <span class="tag">IHK-Zertifikat</span>
-            </div>
+          <div class="skill-group">
+            <h4><i class="bi bi-palette"></i> Web & Design</h4>
+            <ul class="skill-tags">
+              <li><span>HTML5</span></li>
+              <li><span>CSS3</span></li>
+              <li><span>Web Design</span></li>
+              <li><span>Bootstrap</span></li>
+              <li><span>Responsive Design</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4><i class="bi bi-database"></i> Datenbanken & Tools</h4>
+            <ul class="skill-tags">
+              <li><span>SQL</span></li>
+              <li><span>MySQL</span></li>
+              <li><span>Azure DevOps</span></li>
+              <li><span>Linux</span></li>
+              <li><span>Git</span></li>
+            </ul>
+          </div>
+          <div class="skill-group skill-group-languages">
+            <h4><i class="bi bi-translate"></i> Sprachen</h4>
+            <ul class="skill-tags skill-tags-languages">
+              <li><span class="lang-name">Deutsch</span><span class="lang-level">C1</span></li>
+              <li><span class="lang-name">Englisch</span><span class="lang-level">B1</span></li>
+              <li><span class="lang-name">Arabisch</span><span class="lang-level">Muttersprache</span></li>
+            </ul>
           </div>
         </div>
+      </section>
 
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
-          <div class="timeline-marker">
-            <div class="marker-icon">
-              <i class="bi bi-university"></i>
-            </div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-badge">
-              <i class="bi bi-calendar3"></i>
-              <span>2019 (1 Semester)</span>
-            </div>
-            <div class="timeline-header">
-              <h3 class="timeline-title">B.Sc. Informatik <span class="badge-text">(Gaststudent)</span></h3>
-              <div class="timeline-degree">
-                <i class="bi bi-info-circle-fill"></i>
-                <span>Gastsemester</span>
-              </div>
-            </div>
-            <h4 class="timeline-institution">
-              <i class="bi bi-building"></i>
-              Technische Universität Berlin
-            </h4>
-            <p class="timeline-description">
-              Gastsemester im Informatik-Bachelor an der TU Berlin mit Fokus auf Programmierung und Algorithmen. 
-              Teilnahme an grundlegenden Lehrveranstaltungen der theoretischen und praktischen Informatik.
-            </p>
-            <div class="timeline-tags">
-              <span class="tag">Programmierung</span>
-              <span class="tag">Algorithmen</span>
-              <span class="tag">Theoretische Informatik</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
-          <div class="timeline-marker">
-            <div class="marker-icon">
-              <i class="bi bi-translate"></i>
-            </div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-badge">
-              <i class="bi bi-calendar3"></i>
-              <span>2015 - 2018</span>
-            </div>
-            <div class="timeline-header">
-              <h3 class="timeline-title">Deutsch Lernen</h3>
-              <div class="timeline-degree">
-                <i class="bi bi-award-fill"></i>
-                <span>Sprachzertifikat C1</span>
-              </div>
-            </div>
-            <h4 class="timeline-institution">
-              <i class="bi bi-building"></i>
-              Sprachkurs und Integrationskurs
-            </h4>
-            <p class="timeline-description">
-              Deutschkurse von A1 bis C1 inkl. Integrations- und Orientierungskurs. 
-              Schwerpunkt auf Sprachpraxis, Grammatik und landeskundlicher Orientierung.
-            </p>
-            <div class="timeline-tags">
-              <span class="tag">A1-C1</span>
-              <span class="tag">Integrationskurs</span>
-              <span class="tag">Orientierungskurs</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
-          <div class="timeline-marker">
-            <div class="marker-icon">
-              <i class="bi bi-mortarboard"></i>
-            </div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-badge">
-              <i class="bi bi-calendar3"></i>
-              <span>2013 (2 Monate)</span>
-            </div>
-            <div class="timeline-header">
-              <h3 class="timeline-title">Pharmazie</h3>
-              <div class="timeline-degree">
-                <i class="bi bi-info-circle-fill"></i>
-                <span>Kurzzeitstudium</span>
-              </div>
-            </div>
-            <h4 class="timeline-institution">
-              <i class="bi bi-building"></i>
-              Al Euphrat Universität
-            </h4>
-            <p class="timeline-description">
-              Kurzzeitstudium der Pharmazie an der Al Euphrat Universität (2013, 2 Monate). 
-              Grundlagen in Chemie, Biologie und pharmazeutischen Fächern.
-            </p>
-            <div class="timeline-tags">
-              <span class="tag">Chemie</span>
-              <span class="tag">Biologie</span>
-              <span class="tag">Pharmazie</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item" data-aos="fade-up" data-aos-delay="700">
-          <div class="timeline-marker">
-            <div class="marker-icon">
-              <i class="bi bi-book"></i>
-            </div>
-          </div>
-          <div class="timeline-content">
-            <div class="timeline-badge">
-              <i class="bi bi-calendar3"></i>
-              <span>2001 - 2012</span>
-            </div>
-            <div class="timeline-header">
-              <h3 class="timeline-title">Schulzeit</h3>
-              <div class="timeline-degree">
-                <i class="bi bi-award-fill"></i>
-                <span>Abitur - Hochschulreife</span>
-              </div>
-            </div>
-            <h4 class="timeline-institution">
-              <i class="bi bi-building"></i>
-              Grundschule, Mittelschule, Realschule und Abitur
-            </h4>
-            <p class="timeline-description">
-              Grundschule, Mittelschule, Realschule und Abitur. Abschluss mit Hochschulreife.
-            </p>
-            <div class="timeline-tags">
-              <span class="tag">Grundschule</span>
-              <span class="tag">Mittelschule</span>
-              <span class="tag">Realschule</span>
-              <span class="tag">Abitur</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Fähigkeiten mit Logos -->
-  <section id="skills" class="section-padding bg-light">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Fähigkeiten</h2>
-      
-      <!-- Technology Logos -->
-      <div class="tech-logos mb-5" data-aos="fade-up" data-aos-delay="100">
-        <div class="tech-logo-item">
-          <i class="devicon-csharp-plain colored"></i>
-          <span>C#</span>
-        </div>
-        <div class="tech-logo-item">
-          <i class="devicon-dotnetcore-plain colored"></i>
-          <span>.NET</span>
-        </div>
-        <div class="tech-logo-item">
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <span>HTML5</span>
-        </div>
-        <div class="tech-logo-item">
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <span>CSS3</span>
-        </div>
-        <div class="tech-logo-item">
-          <i class="devicon-javascript-plain colored"></i>
-          <span>JavaScript</span>
-        </div>
-        <div class="tech-logo-item">
-          <i class="devicon-php-plain colored"></i>
-          <span>PHP</span>
-        </div>
-        <div class="tech-logo-item">
-          <i class="devicon-mysql-plain-wordmark colored"></i>
-          <span>MySQL</span>
-        </div>
-        <div class="tech-logo-item">
-          <i class="devicon-nodejs-plain colored"></i>
-          <span>Node.js</span>
-        </div>
-        <div class="tech-logo-item">
-          <i class="devicon-linux-plain colored"></i>
-          <span>Linux</span>
-        </div>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4 class="skill-name">C# & .NET</h4>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4 class="skill-name">HTML/CSS/JavaScript</h4>
-              <span class="skill-percentage">90%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4 class="skill-name">PHP & MySQL</h4>
-              <span class="skill-percentage">90%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4 class="skill-name">Web Design</h4>
-              <span class="skill-percentage">90%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 90%"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4 class="skill-name">Node.js</h4>
-              <span class="skill-percentage">80%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 80%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4 class="skill-name">Linux</h4>
-              <span class="skill-percentage">85%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4 class="skill-name">VBS & VBA</h4>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 75%"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <h4 class="skill-name">Azure DevOps</h4>
-              <span class="skill-percentage">75%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-progress" style="width: 75%"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 mt-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="skill-item">
-            <h4 class="skill-name mb-3">Sprachen</h4>
-            <div class="language-list">
-              <div class="language-item">
-                <span class="language-name">Deutsch</span>
-                <span class="language-level">C1</span>
-              </div>
-              <div class="language-item">
-                <span class="language-name">Englisch</span>
-                <span class="language-level">B1</span>
-              </div>
-              <div class="language-item">
-                <span class="language-name">Arabisch</span>
-                <span class="language-level">Muttersprache</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Kontakt -->
-  <section id="contact" class="section-padding">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Kontakt</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-          <div class="contact-card">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-envelope-fill"></i>
-              </div>
-              <div class="contact-info">
-                <h4>E-Mail</h4>
-                <a href="mailto:othmanaldaood@gmail.com">othmanaldaood@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-telephone-fill"></i>
-              </div>
-              <div class="contact-info">
-                <h4>Telefon</h4>
-                <a href="tel:+4915756685368">+49 15******</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="bi bi-linkedin"></i>
-              </div>
-              <div class="contact-info">
-                <h4>LinkedIn</h4>
-                <a href="https://linkedin.com/in/othman-al-daood" target="_blank" rel="noopener noreferrer">LinkedIn Profil</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <p class="mb-0">&copy; <span id="current-year"></span> Othman Al Daood. Alle Rechte vorbehalten.</p>
-        </div>
-        <div class="col-md-6 text-center text-md-end">
-          <a href="https://linkedin.com/in/othman-al-daood" target="_blank" rel="noopener noreferrer" class="footer-link">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="mailto:othmanaldaood@gmail.com" class="footer-link">
+      <section id="kontakt" class="cv-section cv-section-contact">
+        <h2 class="section-heading">
+          <i class="bi bi-envelope"></i>
+          Kontakt
+        </h2>
+        <p class="contact-intro">So erreichst du mich:</p>
+        <div class="contact-list">
+          <a href="mailto:othmanaldaood@gmail.com" class="contact-item">
             <i class="bi bi-envelope-fill"></i>
+            <span>othmanaldaood@gmail.com</span>
+          </a>
+          <a href="tel:+4915756685368" class="contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <span>+49 15******</span>
+          </a>
+          <a href="https://linkedin.com/in/othman-al-daood" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <i class="bi bi-linkedin"></i>
+            <span>LinkedIn Profil</span>
           </a>
         </div>
-      </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="cv-footer">
+    <div class="container">
+      <a href="#" class="back-top" aria-label="Nach oben">↑ Nach oben</a>
+      <p>&copy; <span id="year"></span> Othman Al Daood · Lebenslauf</p>
     </div>
   </footer>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true, offset: 100 });
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
-        }
-      });
-    });
-    
-    const navbar = document.getElementById('mainNavbar');
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 50);
-    });
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
